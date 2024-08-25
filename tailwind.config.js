@@ -21,7 +21,6 @@ module.exports = {
         tertiary: "#999999",
         quaternary: "#cccccc",
         light: "#f7f7f7",
-
         muted: "#cccccc",
         mutedLight: "#f2f2f2",
         mutedDark: "#444444",
@@ -36,9 +35,11 @@ module.exports = {
       },
       backgroundColor: {
         grey: "#d3d3d3",
-
         tomato: "#ec6952",
       },
+      borderColor:{
+        tomato: "#ec6952"
+      }
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],

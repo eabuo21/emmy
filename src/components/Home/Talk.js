@@ -16,7 +16,7 @@ export default function Talk() {
         full-time or Part-time opportunities to push the boundaries of
         collaboration and deliver exceptional work.
       </p>
-      <Link href="#">
+      <Link href="/contact">
         <Button text=" Let's Talk " />
       </Link>
     </div>

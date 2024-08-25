@@ -21,6 +21,7 @@ const Nav2 = () => {
     { name: "About", to: "/about" },
 
     { name: "Services", to: "/services" },
+    { name: "Works", to: "/works" },  
     { name: "Contact", to: "/contact" },
   ];
 

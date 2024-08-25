@@ -86,7 +86,7 @@ const Tabs = () => {
         {tabs.map((tab, index) => (
           <p
             key={index}
-            className={`tab-button py-2 px-1 cursor-pointer font-thin text-xl text-stone-300 hover:text-tomato ${
+            className={`tab-button py-2 px-1 cursor-pointer font-thin text-sm text-stone-300 hover:text-tomato ${
               activeTab === index ? "text-tomato" : ""
             }`}
             onClick={() => setActiveTab(index)}
