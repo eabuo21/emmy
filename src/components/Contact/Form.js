@@ -17,7 +17,7 @@ export default function ContactForm() {
     email: Yup.string()
       .email("Invalid email format")
       .required("Please enter your email"),
-    message: Yup.string().required("Please enter your message"),
+    message: Yup.string().required("Please enter a message"),
   });
 
   // Function to handle form submission
@@ -32,7 +32,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-md mx-auto">
+    <div className="m w-full      d:max-w-md mx-auto">
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}

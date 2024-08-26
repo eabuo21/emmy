@@ -12,7 +12,7 @@ import { faDeskpro } from "@fortawesome/free-brands-svg-icons";
 
 export default function Quality() {
   return (
-    <div className=" w-full flex flex-col justify-start items-center gap-y-[30px] h-[fixed] bg-neutral-900 bg-opacity-65 shadow-[40px] rounded-[45px] mx-auto lg:w-[1200px] md:px-4 md:h-[fixed] p-3 md:p-3 mb-9 mt-9">
+    <div className=" w-full flex flex-col justify-start items-center gap-y-[30px] h-[fixed] bg-neutral-900 bg-opacity-65 shadow-[40px] rounded-[md md:rounded-xl mx-auto lg:w-[1200px] md:px-4 md:h-[fixed] p-3 md:p-3 mb-9 mt-9">
       <section className="headings-section w-full ">
         <h6 className="text-stone-500 font-thin font-lato text-base md:text-xl text-center mt-4">
           Services

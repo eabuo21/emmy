@@ -45,9 +45,9 @@ export default function Hero() {
   
   return (
     <div className="main-container  grid grid-cols-1  mt-[30px] gap-y-[30px] gap-x-[30px]  md:flex md:flex-row  w-full justify-start items-start px-4    md:px-[2rem]">
-      <section className="profiler-container  shadow-2xl  rounded-[45px]   w-full h-[600px] bg-neutral-900 bg-opacity-65  flex flex-col justify-start items-center  p-2   gap-y-[20px]  md:p-4 md:w-[500px] ">
+      <section className="profiler-container  shadow-2xl    rounded-md md:rounded-xl   w-full h-[fixed] bg-neutral-900 bg-opacity-65  flex flex-col justify-start items-center  p-2   gap-y-[20px]  md:p-4 md:w-[500px] ">
         <div
-          className="image-container  border-l-8 border-l-lime-800    w-full bg-tomato  rounded-[50%] p-2  flex flex-col justify-center items-center relative  h-auto   shadow-xl    md:w-[270px]  md:h-[280px]
+          className="image-container  border-l-8 border-l-lime-800    w-[300px] bg-tomato  rounded-[50%] p-3  flex flex-col justify-center items-center relative  h-[300px]   shadow-xl    md:w-[270px]  md:h-[280px]
         
         "
         >
@@ -56,7 +56,7 @@ export default function Hero() {
             alt="emmanuel"
             height={500}
             width={500}
-            className=" w-full h-auto px-4 rounded-b-[50%]  scale-x-[-1] absolute left-0 right-0  bottom-5 border-b-3 border-b-lime-800"
+            className=" w-full h-[340px] px-4 rounded-b-[50%]  scale-x-[-1] absolute left-0 right-0  bottom-5 border-b-3 border-b-lime-800 md:h-auto" 
           />
         </div>
 
@@ -84,11 +84,11 @@ export default function Hero() {
       </section>
 
       <section className="profiler-carousel-container  flex flex-col gap-y-[30px] justify-start items-start px-2    w-full h-[fixed] bg-transparent       md:w-[1200px] ">
-        <section className="profiler-carousel-container  p-6  flex flex-col gap-y-[20px] justify-center items-start px-2    w-full h-[fixed] bg-neutral-900 bg-opacity-65  shadow-2xl  rounded-[45px]   md:px-[2rem] md:w-full  md:h-[500px] ">
+        <section className="profiler-carousel-container  p-6  flex flex-col gap-y-[20px] justify-center items-start px-2    w-full h-[fixed] bg-neutral-900 bg-opacity-65  shadow-2xl  rounded-md  md:rounded-xl   md:px-[2rem] md:w-full  lg:h-[500px] ">
           <h6 className="text-base text-stone-500 font-lato  md:text-xl">
             Hello There!
           </h6>
-          <p className="text-xl  text-stone-300  font-lato    font-thin   md:text-3xl   md:w-[90%]">
+          <p className="text-xl  text-stone-300  font-lato    font-thin   md:text-3xl  w-full   lg:w-[90%]">
             I’m Emmanuel Abuo, a Frontend Developer, and Technical Support
             Specialist Building user-centric Interfaces with pixel-perfect
             precision, and Delivering Technical Support Services to Streamline
@@ -103,7 +103,7 @@ export default function Hero() {
           </a>
         </section>
 
-        <section className="profiler-carousel-container  flex flex-col p-6  gap-y-[60px] justify-start items-start px-2    w-full h-[250px] bg-neutral-900 bg-opacity-65  shadow-2xl  rounded-[45px]   md:px-[2rem] md:w-full ">
+        <section className="profiler-carousel-container  flex flex-col p-6  gap-y-[60px] justify-start items-start px-2    w-full h-[250px] bg-neutral-900 bg-opacity-65  shadow-2xl  rounded-md  md:rounded-xl   md:px-[2rem] md:w-full ">
           <h2 className="text-xl text-stone-300 font-bold  font-lato   mt-4  md:text-2xl">
             Companies Worked With
           </h2>

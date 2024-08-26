@@ -24,7 +24,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className=" w-full flex flex-col justify-start items-center gap-y-[30px] h-[fixed] bg-neutral-900 bg-opacity-65 shadow-[40px] rounded-[45px] mx-auto lg:w-[1200px] md:px-4 md:h-[fixed] p-3 md:p-6   mb-9 mt-9">
+    <div className=" w-full flex flex-col justify-start items-center gap-y-[30px] h-[fixed] bg-neutral-900 bg-opacity-65 shadow-[40px] rounded-md md:rounded-xl  mx-auto lg:w-[1200px] md:px-4 md:h-[fixed] p-3 md:p-6   mb-9 mt-9">
       <section className="headings-section w-full ">
         <h6 className="text-stone-500 font-thin font-lato text-base md:text-xl text-center mt-4">
           Contact
@@ -34,8 +34,8 @@ export default function Contact() {
         </p>
       </section>
 
-      <section className="flex flex-col  justify-center items-center  gap-x-[40px] gap-y-[30px] p-2   lg:flex-row  lg:px-[]   mt-9  ">
-        <div className=" context-container     border border-neutral rounded-md  w-full h-[500px] mb-auto  bg-neutral-900 bg-opacity-65  flex flex-col justify-start items-center  p-2   gap-y-[20px]  md:p-4 md:w-[300px]  ">
+      <section className="flex flex-col  justify-center items-center  gap-x-[40px] gap-y-[30px] p-2   md:flex-row  lg:px-[]   mt-9  w-full  ">
+        <div className=" context-container     border border-neutral rounded-md  w-full  h-[fixed]  md:h-[500px] mb-auto  bg-neutral-900 bg-opacity-65  flex flex-col justify-start items-center  p-2  md:w-[400px] gap-y-[20px]  md:p-4 lg:w-[300px]  ">
           {cards.map((card, index) => (
             <div
               key={index}
@@ -67,7 +67,7 @@ export default function Contact() {
           ))}
         </div>
 
-        <div className="   p-6  flex flex-col gap-y-[20px] justify-center items-start px-2    w-full h-[fixed] bg-neutral-900 bg-opacity-65     border border-neutral rounded-md  md:px-[2rem] md:w-[600px]    md:h-[500px]  ">
+        <div className="   p-6  flex flex-col gap-y-[20px] justify-center items-start px-2    w-full h-[fixed] bg-neutral-900 bg-opacity-65     border border-neutral rounded-md  md:mb-auto  md:px-[2rem]  md:w-[400px] lg:w-[600px]    md:h-[500px]  ">
           <ContactForm />
         </div>
       </section>

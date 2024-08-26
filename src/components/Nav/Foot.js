@@ -5,7 +5,7 @@ export default function Foot() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="w-full h-[100px]  grid grid-cols-1  justify-start items-center  gap-x-[100px]    md:grid-cols-2  bg-blend-darken">
+    <div className="w-full h-[170px]  p-2  md:h-[100px] grid grid-cols-1  justify-center  mx-auto md:mx-0   md:justify-start items-center  gap-x-[100px]    md:grid-cols-2  bg-blend-darken">
       <section className="copy-right-section w-full px-2   flex justify-start items-start  md:px-4">
         <p className="text-base font-thin font-sans text-stone-300   md:text-base ">
           &copy; {currentYear}
@@ -17,7 +17,7 @@ export default function Foot() {
         </p>
       </section>
 
-      <section className="copy-right-section w-full px-2   flex justify-start items-start   md:px-4  ">
+      <section className="copy-right-section w-full px-2  mb-auto  md:mb-0  flex justify-start items-start   md:px-4  ">
         <p className="text-base font-thin font-sans text-stone-300   md:text-base   md:ml-auto ">
           Developed By{" "}
           <Link

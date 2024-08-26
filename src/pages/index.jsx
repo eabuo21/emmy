@@ -3,6 +3,7 @@ import Hero from "@/components/Home/Hero";
 import Works from "@/components/Home/Works";
 
 import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Index = () => {
   useEffect(() => {

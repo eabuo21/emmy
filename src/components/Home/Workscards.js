@@ -103,25 +103,25 @@ const Tabs = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="w-full  grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-x-[30px] gap-y-[40px] "
+          className="w-full  grid grid-cols-1 md:grid-cols-2  mx-auto  lg:grid-cols-3 justify-center items-center   md:gap-x-[30px] gap-y-[40px] "
         >
           {WorksForActiveTab.map((work, index) => (
             <div
               key={index}
-              className={`animated overflow-hidden relative flex flex-col gap-5 justify-center items-center m-auto w-full lg:w-[323px]    hover:transform-gpu hover:scale-110 hover:duration-700  hover:transition-transform hover:ease-in-out  transition-transform duration-700 ease-in-out ${
+              className={`animated overflow-hidden relative flex flex-col gap-5 justify-center items-center m-auto w-full   md:w-[400px] lg:w-[323px]    lg:hover:transform-gpu lg:hover:scale-110 hover:duration-700  lg:hover:transition-transform lg:hover:ease-in-out  lg:transition-transform lg:duration-700 lg:ease-in-out ${
                 index <= 3 ? " " : ""
               }`}
             >
-              <section className="name-position-section flex flex-col shadow-2xl rounded-2xl border border-neutral gap-y-[30px] overflow-hidden h-[320px] w-full bg-stone-900 bg-opacity-30 justify-start items-start">
+              <section className="name-position-section flex flex-col shadow-2xl rounded-md  md:rounded-xl border border-neutral gap-y-[30px] overflow-hidden  h-[270px] md:h-[380px]  lg:h-[320px] w-full bg-stone-900 bg-opacity-30 justify-start items-start">
                 <div className="group relative w-full flex justify-center items-center">
                   <Image
                     src={work.image}
                     alt={work.name}
                     width={300}
                     height={300}
-                    className="h-[150px] w-full md:h-auto lg:h-[200px] lg:w-[323px] hover:scale-105 hover:transition-all hover:duration-1000 hover:ease-in-out ease-in-out duration-1000 transition-all"
+                    className="h-[150px] w-full  md:w-[400px] md:h-auto lg:h-[200px] lg:w-[323px] hover:scale-105 hover:transition-all hover:duration-1000 hover:ease-in-out ease-in-out duration-1000 transition-all"
                   />
-                  <section className="profile-links-section absolute bottom-0 left-0 right-0 bg-neutral-800 bg-opacity-60 h-[250px] opacity-0 group-hover:opacity-100 transform translate-x-full group-hover:translate-x-0 transition-all duration-300 flex flex-col  justify-center items-center">
+                  <section className="profile-links-section absolute bottom-0 left-0 right-0 bg-neutral-800 bg-opacity-60  h-[270px] md:h-[380px]  lg:h-[320px] opacity-0 group-hover:opacity-100 transform translate-x-full group-hover:translate-x-0 transition-all duration-300 flex flex-col  justify-center items-center">
                     <Link href={work.path} target="_blank">
                       <span className="bg-tomato border-l-8 border-l-lime-800   text-white flex flex-col  mt-9 animate-pulse  hover:animate-none  justify-center items-center rounded-[50%] p-2 w-[50px] h-[50px]">
                         <FontAwesomeIcon
@@ -152,7 +152,11 @@ const Tabs = () => {
             onClick={() => setShowMore(!showMore)}
             className="py-2 text-xl  cursor-pointer font-medium hover-line mr-auto ml-7 bg-tomato p-1 w-[40px] hover:border-r-8  hover:border-r-lime-800 hover:transition-transform transition-transform flex justify-center items-center  rounded-[50%]"
           >
-            {showMore ? <FontAwesomeIcon icon={faMinusCircle} className=" "/> : <FontAwesomeIcon icon={faPlusCircle} className=" "/>}
+            {showMore ? (
+              <FontAwesomeIcon icon={faMinusCircle} className=" " />
+            ) : (
+              <FontAwesomeIcon icon={faPlusCircle} className=" " />
+            )}
           </p>
         </div>
       )}

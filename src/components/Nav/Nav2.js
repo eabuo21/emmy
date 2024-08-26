@@ -21,7 +21,7 @@ const Nav2 = () => {
     { name: "About", to: "/about" },
 
     { name: "Services", to: "/services" },
-    { name: "Works", to: "/works" },  
+    { name: "Works", to: "/works" },
     { name: "Contact", to: "/contact" },
   ];
 
@@ -60,17 +60,18 @@ const Nav2 = () => {
   return (
     <Disclosure
       as="nav"
-      className=" bg-black  p-2   flex flex-row   px-5 mt-8  lg:px-[6rem]   sticky top-0 left-0 right-0 z-50 "
+      className=" bg-black  p-2   flex flex-row   px-5 mt-8  lg:px-[6rem]  h-20   sticky top-0 left-0 right-0 z-50 "
     >
       {({ open }) => (
         <>
-          <div className=" mx-auto grid grid-cols-2   lg:grid-cols-3 items-center justify-evenly w-full  ">
+          <div className=" mx-auto grid grid-cols-2   md:grid-cols-3 items-center justify-evenly w-full  ">
             {/* Logo */}
             <div className="flex-shrink-0 text-white  mr-auto  flex flex-row gap-x-5">
               {socials.map((items, index) => (
                 <Link
                   key={index}
-                  href={items.path} target="_blank"
+                  href={items.path}
+                  target="_blank"
                   className="text-white hover:text-[#ec6952]  "
                 >
                   <FontAwesomeIcon icon={items.icon} className="" />
@@ -79,7 +80,7 @@ const Nav2 = () => {
             </div>
 
             {/* Navigation Links */}
-            <div className=" desktop-navigation   hidden   mx-auto  lg:flex lg:flex-row space-x-4  justify-start  items-center  ">
+            <div className=" desktop-navigation   hidden   mx-auto  md:flex lg:flex-row space-x-4  justify-start  items-center  ">
               {navigationLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -91,7 +92,7 @@ const Nav2 = () => {
               ))}
             </div>
 
-            <div className=" hidden   lg:flex  justify-start items-start  bg-transparent shadow-2xl  w-[fixed]  border border-[#ec6952] rounded-md p-1 ml-auto ">
+            <div className=" hidden   md:flex  justify-start items-start  bg-transparent shadow-2xl  w-[fixed]  border border-[#ec6952] rounded-md p-1 ml-auto ">
               <Link href="#">
                 <section className="button-section  font-thin    w-[100px] rounded-md flex flex-col justify-center items-center p-2 text-base  animate-pulse  text-white  bg-transparent hover:bg-[#ec6952]  ">
                   Hire Me
@@ -101,7 +102,7 @@ const Nav2 = () => {
 
             {/* Hamburger Menu (visible on large screens) */}
             {/* Mobile Menu Button (hidden on large screens) */}
-            <div className="lg:hidden ml-auto  mr-5  text-5xl ">
+            <div className="md:hidden ml-auto  mr-5  text-2xl ">
               <Disclosure.Button
                 className="text-white"
                 onClick={() => setMenuOpen(!menuOpen)}
@@ -116,25 +117,33 @@ const Nav2 = () => {
           <Transition
             show={menuOpen}
             as={Fragment}
-            enter="transition duration-300 ease-in-out "
-            enterFrom="-translate-y-full"
+            enter="transition-transform  duration-700 ease-in-out "
+            enterFrom="-translate-y-full "
             enterTo="translate-y-0"
-            leave="transition duration-200 ease-in "
+            leave="transition-transform  duration-700 ease-in-out "
             leaveFrom="translate-y-0"
             leaveTo="-translate-y-full"
           >
-            <Disclosure.Panel className="lg:hidden bg-gradient-to-br from-black  to-violet-950  h-[400px] fixed inset-0 z-50 w-auto flex flex-col justify-center items-center gap-4 text-2xl">
+            <Disclosure.Panel className="md:hidden  bg-zinc-800  mt-[4rem]  bg-opacity-90  h-[400px] fixed inset-0 z-50 w-auto flex flex-col justify-center items-center gap-4 text-2x transition-transform  duration-700 ease-in-out l">
               <div className="flex flex-col  justify-center items-center space-y-4 p-4">
                 {navigationLinks.map((link) => (
                   <Link
                     key={link.name}
                     href={link.to}
-                    className="text-white hover:text-gray-300 font-sans text-3xl "
+                    className="text-white hover:text-stone-300 font-lato font-thin  text-xl "
                     onClick={() => setMenuOpen(false)}
                   >
                     {link.name}
                   </Link>
                 ))}
+
+                <div className="    lg:flex  justify-start items-start  bg-transparent shadow-2xl  w-[fixed]  border border-[#ec6952] rounded-md p-1 ml-auto ">
+                  <Link href="#" onClick={() => setMenuOpen(false)}>
+                    <section className="button-section  font-thin    w-[100px] rounded-md flex flex-col justify-center items-center p-2 text-base  animate-pulse  text-white  bg-transparent hover:bg-[#ec6952]  ">
+                      Hire Me
+                    </section>
+                  </Link>
+                </div>
 
                 <button
                   onClick={() => setMenuOpen(false)}

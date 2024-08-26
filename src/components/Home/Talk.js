@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function Talk() {
   return (
     <div
-      className=" w-full h-[fixed]  flex flex-col p-6  gap-y-[30px] justify-start items-center  px-2  mb-[3rem]  bg-neutral-900 bg-opacity-65  shadow-2xl  rounded-[45px]  
-    md:w-[1200px] md:h-[350px]   mx-auto "
+      className=" w-full  px-3  h-[fixed]  flex flex-col  gap-y-[30px] justify-start items-center    mb-[3rem]  bg-neutral-900 bg-opacity-65  shadow-2xl  rounded-md  
+    lg:w-[1200px] md:h-[350px] md:w-full  mx-auto   md:rounded-xl"
     >
       <h2 className="text-xl font-lato -300 font-thin   text-stone-300  text-center     mt-8  md:text-4xl">
         Are You Ready to kickstart your project with a touch of magic?

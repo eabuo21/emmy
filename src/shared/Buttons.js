@@ -20,6 +20,8 @@ const Button = ({
       delay: 50,
       mirror: true,
       anchorPlacement: "top-bottom",
+      once: true,
+      oncePerElement: true, 
     });
   }, []);
 

@@ -101,7 +101,7 @@ export default function Testimonials() {
   const items = testimonials.map((item) => (
     <div
       key={item.id}
-      className="testimonial-card flex flex-col gap-y-5 justify-start items-start p-4 border-neutral border h-[400px] w-[550px] mx-auto hover:border hover:border-lime-800 rounded-lg"
+      className="testimonial-card flex flex-col gap-y-5 justify-start items-start p-4 border-neutral border  w-full h-[400px] md:h-[500px] md:w-[400px] lg:h-[400px] lg:w-[550px]   mx-auto hover:border hover:border-lime-800 rounded-lg"
     >
       <Image
         src={item.image}
@@ -123,7 +123,7 @@ export default function Testimonials() {
   ));
 
   return (
-    <div className="relative w-full flex flex-col justify-center items-center gap-y-[30px] h-[400px] bg-neutral-900 bg-opacity-65 shadow-[40px] rounded-[45px] mx-auto lg:w-[1200px] md:px-4 md:h-[680px] p-3 md:p-3 mb-9">
+    <div className="relative w-full flex flex-col justify-center items-center gap-y-[30px] h-[fixed] bg-neutral-900 bg-opacity-65 shadow-[40px] rounded-md  md:rounded-xl  mx-auto lg:w-[1200px] md:px-4 md:h-[fixed] p-3 md:p-3 mb-9">
       <h6 className="text-stone-500 font-thin font-lato text-xl md:text-2xl text-center mt-4">
         Testimonials
       </h6>
