@@ -40,11 +40,8 @@ export default function Hero() {
     },
   ];
 
-
-
-  
   return (
-    <div className="main-container  grid grid-cols-1  mt-[30px] gap-y-[30px] gap-x-[30px]  md:flex md:flex-row  w-full justify-start items-start px-4    md:px-[2rem]">
+    <div className="main-container  grid grid-cols-1  mt-[30px] gap-y-[30px] gap-x-[30px]  md:flex md:flex-row  w-full justify-start items-start px-4    md:px-[2rem]  ">
       <section className="profiler-container  shadow-2xl    rounded-md md:rounded-xl   w-full h-[fixed] bg-neutral-900 bg-opacity-65  flex flex-col justify-start items-center  p-2   gap-y-[20px]  md:p-4 md:w-[500px] ">
         <div
           className="image-container  border-l-8 border-l-lime-800    w-[300px] bg-tomato  rounded-[50%] p-3  flex flex-col justify-center items-center relative  h-[300px]   shadow-xl    md:w-[270px]  md:h-[280px]
@@ -56,7 +53,7 @@ export default function Hero() {
             alt="emmanuel"
             height={500}
             width={500}
-            className=" w-full h-[340px] px-4 rounded-b-[50%]  scale-x-[-1] absolute left-0 right-0  bottom-5 border-b-3 border-b-lime-800 md:h-auto" 
+            className=" w-full h-[340px] px-4 rounded-b-[50%]  scale-x-[-1] absolute left-0 right-0  bottom-5 border-b-3 border-b-lime-800 md:h-auto"
           />
         </div>
 
@@ -103,63 +100,62 @@ export default function Hero() {
           </a>
         </section>
 
-        <section className="profiler-carousel-container  flex flex-col p-6  gap-y-[60px] justify-start items-start px-2    w-full h-[250px] bg-neutral-900 bg-opacity-65  shadow-2xl  rounded-md  md:rounded-xl   md:px-[2rem] md:w-full ">
+        <section className="profiler-carousel-container  flex flex-col p-6  gap-y-[60px] justify-start items-start px-2    w-full h-[250px] bg-neutral-900 bg-opacity-65  shadow-2xl  rounded-md  md:rounded-xl   md:px-[2rem] md:w-[820px] ">
           <h2 className="text-xl text-stone-300 font-bold  font-lato   mt-4  md:text-2xl">
             Companies Worked With
           </h2>
-          {/* <Marquee
+          <Marquee
             speed={30}
             gradient={false}
             pauseOnHover={true}
-            className="custom-marquee "
+            className="custom-marquee h-full overflow-hidden"
           >
-            <div className="marquee-item flex flex-row gap-x-8 justify-between  items-center p-2 ">
-              {logos.map((logo, index) => (
-                <Link
-                  key={index}
-                  href={logo.link}
-                  className=" flex flex-row gap-x-2 justify-center items-center "
-                >
-                  <Image
-                    src={logo.image}
-                    alt={logo.name}
-                    width={50}
-                    height={50}
-                    className="rounded-full"
-                  />
-                  <p className="text-sm font-medium text-stone-500 font-sans">
-                    {logo.name}
-                  </p>
-                </Link>
-              ))}
+            <div className="marquee-item flex flex-row gap-x-8 justify-center items-center">
+              <Marquee
+                speed={10}
+                gradient={false}
+                pauseOnHover={true}
+                className="custom-marquee  h-full "
+              >
+                <div className="marquee-item flex flex-row gap-x-8 justify-center  items-center ">
+                  <div className="item-1 text-xl font-black  bg-clip-text bg-gradient-to-r from-stone-300  via-stone-400  to-stone-700  text-transparent  md:text-3xl  font-[fantasy]">
+                    {" "}
+                    NIPC{" "}
+                  </div>
+                  <div className="item-1 text-xl font-black  bg-clip-text bg-gradient-to-r from-stone-300  via-stone-400  to-stone-700  text-transparent  md:text-3xl  font-[fantasy]">
+                    {" "}
+                    COFFEYCROWN{" "}
+                  </div>
+                  <div className="item-1 text-xl font-black  bg-clip-text bg-gradient-to-r from-stone-300  via-stone-400  to-stone-700  text-transparent  md:text-3xl  font-[fantasy]">
+                    {" "}
+                    BJ-TECH{" "}
+                  </div>
+                  <div className="item-1 text-xl font-black  bg-clip-text bg-gradient-to-r from-stone-300  via-stone-400  to-stone-700  text-transparent  md:text-3xl  font-[fantasy]">
+                    {" "}
+                    TONGSTON{" "}
+                  </div>
+                  <div className="item-1 text-xl font-black  bg-clip-text bg-gradient-to-r from-stone-300  via-stone-400  to-stone-700  text-transparent  md:text-3xl  font-[fantasy]">
+                    {" "}
+                    GALAXY-BACKBONE{" "}
+                  </div>
+                  <div className="item-1 text-xl font-black  bg-clip-text bg-gradient-to-r from-stone-300  via-stone-400  to-stone-700  text-transparent  md:text-3xl  font-[fantasy]">
+                    {" "}
+                    UPWORK{" "}
+                  </div>
+                  <div className="item-1 text-xl font-black  bg-clip-text bg-gradient-to-r from-stone-300  via-stone-400  to-stone-700  text-transparent  md:text-3xl  font-[fantasy]">
+                    {" "}
+                    FIVERR{" "}
+                  </div>
+                  <div className="item-1 text-xl font-black  bg-clip-text bg-gradient-to-r from-stone-300  via-stone-400  to-stone-700  text-transparent  md:text-3xl  font-[fantasy]">
+                    {" "}
+                    FREELANCER{" "}
+                  </div>
+                </div>
+              </Marquee>
             </div>
-          </Marquee> */}
+          </Marquee>
         </section>
       </section>
     </div>
   );
 }
-
-
-// const logos = [
-//   {
-//     name: "Tongston",
-//     logo: "/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWZTc-7rgHelHD4VRyP0adZH8iNlM9nU8CNQ&s",
-//     link: "https://tongston.com",
-//   },
-//   {
-//     name: "Facebook",
-//     image: "/public/assets/images/facebook.png",
-//     link: "https://www.facebook.com/",
-//   },
-//   {
-//     name: "Instagram",
-//     image: "/public/assets/images/instagram.png",
-//     link: "https://www.instagram.com/",
-//   },
-//   {
-//     name: "Twitter",
-//     image: "/public/assets/images/twitter.png",
-//     link: "https://www.twitter.com/",
-//   },
-// ];
