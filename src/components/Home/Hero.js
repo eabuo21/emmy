@@ -80,7 +80,7 @@ export default function Hero() {
         </div>
       </section>
 
-      <section className="profiler-carousel-container  flex flex-col gap-y-[30px] justify-start items-start px-2    w-full h-[fixed] bg-transparent       md:w-[1200px] ">
+      <section className="profiler-carousel-container  flex flex-col gap-y-[30px] justify-start items-start   w-full h-[fixed] bg-transparent     md:px-2      md:w-[1200px] ">
         <section className="profiler-carousel-container  p-6  flex flex-col gap-y-[20px] justify-center items-start px-2    w-full h-[fixed] bg-neutral-900 bg-opacity-65  shadow-2xl  rounded-md  md:rounded-xl   md:px-[2rem] md:w-full  lg:h-[500px] ">
           <h6 className="text-base text-stone-500 font-lato  md:text-xl">
             Hello There!
@@ -95,12 +95,12 @@ export default function Hero() {
             <span className="bg-lime-800 rounded-[50%] w-4 h-4  animate-bounce "></span>{" "}
             Available for Freelancing
           </p>
-          <a href="/public/assets/files/Abuo Emmanuel Otor.pdf" download>
+          <a href="/assets/files/Abuo Emmanuel Otor.pdf" download>
             <Button />
           </a>
         </section>
 
-        <section className="profiler-carousel-container  flex flex-col p-6  gap-y-[60px] justify-start items-start px-2    w-full h-[250px] bg-neutral-900 bg-opacity-65  shadow-2xl  rounded-md  md:rounded-xl   md:px-[2rem] md:w-[820px] ">
+        <section className="profiler-carousel-container  flex flex-col    p-6  gap-y-[60px] justify-start items-start       md: px-2    w-full h-[250px] bg-neutral-900 bg-opacity-65  shadow-2xl  rounded-md  md:rounded-xl  md:w-[500px]  md:px-[2rem] lg:w-[820px] ">
           <h2 className="text-xl text-stone-300 font-bold  font-lato   mt-4  md:text-2xl">
             Companies Worked With
           </h2>

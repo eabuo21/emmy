@@ -1,11 +1,17 @@
-import React from "react";
+import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBookBookmark,
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Profile() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  });
+
   var exp = [
     {
       icon: faBookBookmark,
@@ -61,7 +67,7 @@ export default function Profile() {
   ];
 
   return (
-    <div className="grid grid-cols-1 justify-center items-center w-full h-[fixed]   mx-auto  gap-x-5  gap-y-8   md:grid-cols-2 mb-9">
+    <div className="grid grid-cols-1 justify-center items-center w-full h-[fixed]   mx-auto  gap-x-5  gap-y-8   md:grid-cols-2 mb-9  md:px-5  ">
       <section className="profiler-carousel-container  p-6  flex flex-col gap-y-[20px] justify-start  items-start px-2    w-full h-[fixed] bg-neutral-900 bg-opacity-65  shadow-[40px]  rounded-md  md:rounded-xl   mx-auto   md:mx-0   lg:px-[2rem]   md:w-[fixed]  lg:w-[600px]  md:h-[fixed] md:p-3 ">
         <h2 className="text-xl text-stone-300 font-thin  px-2  mt-3  font-lato   md:text-4xl  md:px-3 ">
           Experience
@@ -69,6 +75,10 @@ export default function Profile() {
         <section className=" flex flex-col  gap-y-5 justify-start items-start    md:px-3 ">
           {exp.map((cards, index) => (
             <div
+              data-aos="zoom-in "
+              data-aos-easing="ease-in linear"
+              data-aos-delay={index * 100}
+              data-aos-anchor-placement="top-bottom"
               key={index}
               className="flex flex-row  gap-x-1  md:gap-x-5 justify-start items-center p-1 m-3 pb-2  w-[400px] h-[90px] border-b  md:pb-6  border-b-neutral "
             >
@@ -101,6 +111,10 @@ export default function Profile() {
         <section className=" flex flex-col  gap-y-5 justify-start items-start px-2   md:px-3 ">
           {edu.map((cards, index) => (
             <div
+              data-aos="zoom-in "
+              data-aos-easing="ease-in linear"
+              data-aos-delay={index * 100}
+              data-aos-anchor-placement="top-bottom"
               key={index}
               className="flex flex-row  gap-x-1  md:gap-x-5 justify-start items-center p-1 m-3 pb-2  w-[400px] h-[90px] border-b  md:pb-6  border-b-neutral"
             >

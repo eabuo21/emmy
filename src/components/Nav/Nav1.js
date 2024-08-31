@@ -16,7 +16,7 @@ export default function Nav1() {
         </section>
       </Link>
       <div className="   flex  justify-start items-start  bg-transparent shadow-2xl   border border-lime-800 rounded-md p-2">
-        <Link href="#">
+        <Link href="https://linkedin.com/in/emmanuel-abuo-b41453206" target="_blank">
           <section className="button-section  font-thin    w-[100px] rounded-md flex flex-col justify-center items-center p-1 text-base  animate-pulse  text-white  bg-lime-800">
             Connect
           </section>

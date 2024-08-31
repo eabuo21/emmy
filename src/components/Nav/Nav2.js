@@ -10,7 +10,9 @@ import {
   faLinkedinIn,
   faFacebook,
   faXTwitter,
+  faSkype,
   faGithub,
+  faMedium
 } from "@fortawesome/free-brands-svg-icons";
 
 const Nav2 = () => {
@@ -32,19 +34,24 @@ const Nav2 = () => {
     },
     {
       icon: faLinkedinIn,
-      path: "",
+      path: "https://linkedin.com/in/emmanuel-abuo-b41453206",
     },
     {
       icon: faFacebook,
-      path: "",
+      path: "https://www.facebook.com/praise.lynx.12",
     },
     {
-      icon: faXTwitter,
-      path: "",
+      icon: faSkype,
+      path: "https://join.skype.com/invite/OU5I1nkewm74",
     },
     {
       icon: faGithub,
-      path: "",
+      path: "https://github.com/eabuo21",
+    },
+
+    {
+      icon: faMedium,
+      path: "https://github.com/eabuo21",
     },
   ];
 
@@ -93,7 +100,7 @@ const Nav2 = () => {
             </div>
 
             <div className=" hidden   md:flex  justify-start items-start  bg-transparent shadow-2xl  w-[fixed]  border border-[#ec6952] rounded-md p-1 ml-auto ">
-              <Link href="#">
+              <Link href="mailto: emmaabuo2020@yahoo.com">
                 <section className="button-section  font-thin    w-[100px] rounded-md flex flex-col justify-center items-center p-2 text-base  animate-pulse  text-white  bg-transparent hover:bg-[#ec6952]  ">
                   Hire Me
                 </section>
@@ -138,7 +145,7 @@ const Nav2 = () => {
                 ))}
 
                 <div className="    lg:flex  justify-start items-start  bg-transparent shadow-2xl  w-[fixed]  border border-[#ec6952] rounded-md p-1 ml-auto ">
-                  <Link href="#" onClick={() => setMenuOpen(false)}>
+                  <Link href="mailto: emmaabuo2020@yahoo.com" onClick={() => setMenuOpen(false)}>
                     <section className="button-section  font-thin    w-[100px] rounded-md flex flex-col justify-center items-center p-2 text-base  animate-pulse  text-white  bg-transparent hover:bg-[#ec6952]  ">
                       Hire Me
                     </section>

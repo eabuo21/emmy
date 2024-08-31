@@ -45,7 +45,7 @@ export default function Hero() {
             industry.
           </p>
 
-          <Link href="#">
+          <Link href="/contact">
             <Button text="Get In Touch " icon={faEnvelope} />
           </Link>
         </section>

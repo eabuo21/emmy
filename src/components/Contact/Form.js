@@ -1,7 +1,17 @@
-import React from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import {
+  Formik,
+  Form,
+  Field,
+  ErrorMessage,
+  setNestedObjectValues,
+} from "formik";
 import * as Yup from "yup";
 import Button from "@/shared/Buttons";
+import emailjs from "@emailjs/browser";
+import {
+  showSuccessNotification,
+  showErrorNotification,
+} from "../Notification/Alert";
 
 export default function ContactForm() {
   // Initial values for the form fields
@@ -9,6 +19,39 @@ export default function ContactForm() {
     name: "",
     email: "",
     message: "",
+  };
+
+  const resetForm =()=> {
+    setNestedObjectValues(initialValues); 
+  };
+
+  // Get environment variables
+  const service_id = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const template_id = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const api_key = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+  // Function to handle form submission
+  const handleSubmit = (values, { setSubmitting }) => {
+    const templateParams = {
+      name: values.name,
+      email: values.email,
+      message: values.message,
+    };
+
+    emailjs
+      .send(service_id, template_id, templateParams, api_key)
+      .then((result) => {
+        console.log(result.text);
+        showSuccessNotification("Email sent successfully");
+        setSubmitting(false);
+        resetForm();
+        
+      })
+      .catch((error) => {
+        console.log(error.text);
+        showErrorNotification("Failed to send email");
+        setSubmitting(false);
+      });
   };
 
   // Validation schema using Yup
@@ -20,32 +63,20 @@ export default function ContactForm() {
     message: Yup.string().required("Please enter a message"),
   });
 
-  // Function to handle form submission
-  const onSubmit = (values, { setSubmitting, resetForm }) => {
-    console.log("Form data", values);
-    // Simulate an API call
-    setTimeout(() => {
-      alert("Form submitted successfully");
-      setSubmitting(false);
-      resetForm(); // Reset the form after successful submission
-    }, 1000);
-  };
-
   return (
-    <div className="m w-full      d:max-w-md mx-auto">
+    <div className="m w-full max-w-md mx-auto">
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
-        onSubmit={onSubmit}
+        onSubmit={handleSubmit}
       >
         {({ isSubmitting }) => (
-          <Form className="space-y-8   ">
+          <Form className="space-y-8">
             <div className="flex flex-col sm:flex-row sm:space-x-4">
               {/* Name Field */}
               <div className="flex-1">
                 <Field
                   type="text"
-                  id="name"
                   name="name"
                   placeholder="Your Name"
                   className="w-full h-12 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-lime-800"
@@ -61,7 +92,6 @@ export default function ContactForm() {
               <div className="flex-1 mt-4 sm:mt-0">
                 <Field
                   type="email"
-                  id="email"
                   name="email"
                   placeholder="Your Email"
                   className="w-full h-12 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-lime-800"
@@ -78,7 +108,6 @@ export default function ContactForm() {
             <div>
               <Field
                 as="textarea"
-                id="message"
                 name="message"
                 rows="4"
                 placeholder="Your Message"
@@ -87,17 +116,12 @@ export default function ContactForm() {
               <ErrorMessage
                 name="message"
                 component="div"
-                className="text-warning text-sm mt-1 "
+                className="text-warning text-sm mt-1"
               />
             </div>
 
             {/* Submit Button */}
-            <Button
-              text="Submit"
-              type="submit"
-              disabled={isSubmitting}
-              className=""
-            >
+            <Button text="Submit" type="submit" disabled={isSubmitting}>
               {isSubmitting ? "Submitting..." : "Submit"}
             </Button>
           </Form>

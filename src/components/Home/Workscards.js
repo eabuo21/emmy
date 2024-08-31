@@ -19,52 +19,130 @@ const Tabs = () => {
   const works = {
     Software: [
       {
-        image: "https://bentos-react.vercel.app/assets/work1-CBmW8qa2.jpg",
+        image: "/assets/images/works/ventures.png",
         title: "Website",
-        name: "Responsive Web Development ",
-        path: "",
+        name: "Tongston Entrepreneurship  Ventures  ",
+        path: "https://t-ventures.tongston.com",
       },
       {
-        image: "https://bentos-react.vercel.app/assets/work4-MDM2TfKy.jpg",
+        image: "/assets/images/works/sosf.png",
         title: "Website",
-        name: "Responsive Web Development ",
-        path: "",
-      },
-      {
-        image: "https://bentos-react.vercel.app/assets/work4-MDM2TfKy.jpg",
-        title: "Website",
-        name: "Responsive Web Development ",
-        path: "",
+        name: "Skills Outside School Foundation  ",
+        path: "https://sosf.vercel.app",
       },
 
       {
-        image: "https://bentos-react.vercel.app/assets/work2-DtmWxhl8.jpg",
+        image: "/assets/images/works/coffey.png",
         title: "Website",
-        name: "Responsive Web Development ",
-        path: "",
+        name: "CoffeyCorwn  HealthCare Services  ",
+        path: "https://coffeycrown.ca",
       },
 
       {
-        image: "https://bentos-react.vercel.app/assets/work3-BeTDGQxd.jpg",
+        image: "/assets/images/works/cyber.png",
         title: "Website",
-        name: "Responsive Web Development ",
-        path: "",
+        name: "BenCyber 2000 ",
+        path: "https://eabuo21.github.io/GeorgeCyber.com/",
+      },
+
+      {
+        image: "/assets/images/works/folio.png",
+        title: "Portfolio Site",
+        name: "Personal Portfolio Website ",
+        path: "https://fabzcode.vercel.app",
+      },
+
+      {
+        image: "https://abuoe.vercel.app/assets/logbook-1ded4c0a.jpg",
+        title: "Bsc Project Web App",
+        name: "Electronic Logbook For Siwes  ",
+        path: "https://github.com/eabuo21/Final-Year-Bsc-Project",
+      },
+
+      {
+        image: "/assets/images/works/folio2.png",
+        title: "Clients Portfolio Site",
+        name: "Projects Portfolio  ",
+        path: "https://abuoe.vercel.app",
+      },
+
+      {
+        image: "https://abuoe.vercel.app/assets/Urld-8878851a.png",
+        title: "Web App",
+        name: "URL Shortener with Bitly API  ",
+        path: "https://github.com/eabuo21/Url-Shorten",
+      },
+
+      {
+        image: "/assets/images/works/holdings.png",
+        title: "Website",
+        name: "Tongston Entrepreneurship Holdings  ",
+        path: "https://tongston.com",
       },
     ],
 
     TechnicalSupport: [
       {
-        image: "https://bentos-react.vercel.app/assets/work4-MDM2TfKy.jpg",
-        title: "Engr. Bello Tongo",
-        name: "",
+        image: "/assets/images/works/console1.png",
+        title: "Search Engine Optimization",
+        name: "Tongston Entrepreneurship Group",
+        path: "",
+      },
+      {
+        image: "/assets/images/works/zoho.png",
+        title:
+          "Zoho Cloud Team Collaboration and Remote Workspace Implementation ",
+        name: "ABC Multidisciplinary Consulting Services",
+        path: "",
+      },
+      {
+        image: "/assets/images/works/console2.png",
+        title: "Search Engine Optimization",
+        name: "Tongston Entrepreneurship Ventures",
+        path: "",
+      },
+
+      {
+        image: "/assets/images/works/zoho.png",
+        title:
+          " Zoho Cloud Team Collaboration and Remote Workspace Implementation ",
+        name: "ChatDoct Nigeria",
         path: "",
       },
     ],
     CloudSolutions: [
       {
-        image: "",
-        title: "Engr. Bello Tongo",
-        name: "",
+        image: "https://abuoe.vercel.app/assets/abc2-f58aabdc.png",
+        title: "Email and Cloud Data Migration ",
+        name: "Skills Outside School Foundation",
+        path: "",
+      },
+
+      {
+        image: "https://abuoe.vercel.app/assets/abc1-8596020a.png",
+        title: "Email and Cloud Data Migration ",
+        name: "PIF Africa",
+        path: "",
+      },
+
+      {
+        image: "https://abuoe.vercel.app/assets/abc2-f58aabdc.png",
+        title: "Email and Cloud Data  Solutions ",
+        name: "ABC Multidisciplinary Consulting Services",
+        path: "",
+      },
+
+      {
+        image: "/assets/images/works/chatdoct.png",
+        title: "Email and Cloud Data Migration ",
+        name: "ChatDoct Nigeria",
+        path: "",
+      },
+
+      {
+        image: "/assets/images/works/chcloud.png",
+        title: "Email and Cloud Data Migration ",
+        name: "Tongston Entrepreneurship Group",
         path: "",
       },
     ],
@@ -146,7 +224,7 @@ const Tabs = () => {
         </motion.div>
       </AnimatePresence>
 
-      {totalWorksForActiveTab > 4 && (
+      {totalWorksForActiveTab > 3 && (
         <div className="w-full flex justify-center mt-4">
           <p
             onClick={() => setShowMore(!showMore)}
