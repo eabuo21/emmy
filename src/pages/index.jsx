@@ -15,23 +15,24 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>Emmanuel Ot</title>
+        <title>Engr Ot</title>
         <meta name="description" content="Engr Emmanuel" />
-        <meta property="og:title" content="Portfolio" />
-        <meta property="og:description" content="Engr Emmanuel" />
-        <meta property="og:type" content="Create, Build, Innovate" />
-        <meta property="og:url" content="https://fabzcode.vercel.app" />
+        <meta property="og:title" content="Engr Emmanuel Ot" />
         <meta
-          property="og:image"
-          content="/assets/images/dev.png"
+          property="og:description"
+          content="I am Emmanuel, a passionate Software Developer and Tech Enthusiast dedicated to creating impactful solutions through innovation. Guided by the principles of Create | Build | Innovate, I leverage technology to drive change and deliver meaningful results that contribute to societal progress. "
+          className="text-white text-sm font-cur"
         />
+        <meta property="og:type" content="Create, Build, Innovate" />
+        <meta property="og:url" content="https://fabzcode.vercel.app/" />
+        <meta property="og:image" content="/assets/images/dev.png" />
         <meta property="twitter:card" content="Software Developer" />
         <meta property="twitter:title" content="Portfolio" />
-        <meta property="twitter:description" content="Emmanuel Abuo, Software Developer" />
         <meta
-          property="twitter:image"
-          content="/assets/images/dev.png"
+          property="twitter:description"
+          content="Emmanuel Abuo, Software Developer"
         />
+        <meta property="twitter:image" content="/assets/images/dev.png" />
         <meta
           name="keywords"
           content="portfolio, design, development, freelance, website, seo, developers, developer, frontend, software   "

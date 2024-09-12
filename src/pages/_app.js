@@ -16,12 +16,20 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Emmanuel Ot</title>
-        {/* add the favicon image */} 
+        <title>Engr Ot</title>
+        {/* add the favicon image */}
         <link rel="icon" href="/assets/images/dev.png" imageSizes="20px" />
         <meta name="description" content="Engr Emmanuel" />
-        <meta property="og:title" content="Portfolio" />
-        <meta property="og:description" content="Engr Emmanuel" />
+        <meta
+          property="og:title"
+          content="Engr Emmanuel Ot "
+          className="text-white text-sm font-cur"
+        />
+        <meta
+          property="og:description"
+          content="I am Emmanuel, a passionate Software Developer and Tech Enthusiast dedicated to creating impactful solutions through innovation. Guided by the principles of Create | Build | Innovate, I leverage technology to drive change and deliver meaningful results that contribute to societal progress. "
+          className="text-white text-sm font-cur"
+        />
         <meta property="og:type" content="Create, Build, Innovate" />
         <meta property="og:url" content="https://fabzcode.vercel.app" />
         <meta property="og:image" content="/assets/images/dev.png" />
