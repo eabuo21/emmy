@@ -19,23 +19,28 @@ const Tabs = () => {
   const works = {
     Software: [
       {
+        image: "/assets/images/works/tees24.png",
+        title: "Website",
+        name: "TEES-24  ",
+        path: "https://tees24.vercel.app",
+      },
+      {
         image: "/assets/images/works/ventures.png",
         title: "Website",
         name: "Tongston Entrepreneurship  Ventures  ",
         path: "https://t-ventures.tongston.com",
       },
       {
-        image: "/assets/images/works/sosf.png",
-        title: "Website",
-        name: "Skills Outside School Foundation  ",
-        path: "https://sosf.vercel.app",
-      },
-
-      {
         image: "/assets/images/works/coffey.png",
         title: "Website",
         name: "CoffeyCorwn  HealthCare Services  ",
         path: "https://coffeycrown.ca",
+      },
+      {
+        image: "/assets/images/works/sosf.png",
+        title: "Website",
+        name: "Skills Outside School Foundation  ",
+        path: "https://sosf.vercel.app",
       },
 
       {

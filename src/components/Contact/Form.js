@@ -28,7 +28,7 @@ export default function ContactForm() {
   // Get environment variables
   const service_id = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
   const template_id = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-  const api_key = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+  const api_key = process.env.NEXT_PUBLIC_EMAILJS_PUB_KEY;
 
   // Function to handle form submission
   const handleSubmit = (values, { setSubmitting }) => {
