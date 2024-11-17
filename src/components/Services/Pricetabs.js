@@ -261,7 +261,7 @@ const PriceTabs = () => {
       // Basic Plan
       {
         title: "Basic Plan",
-        description: <p>Initial media management and support.</p>,
+        description: <span>Initial media management and support.</span>,
         rate: "$250",
         time: "/hour",
         lists: [
@@ -274,7 +274,7 @@ const PriceTabs = () => {
       // Gold Plan
       {
         title: "Gold Plan",
-        description: <p>Enhanced media services with additional features.</p>,
+        description: <span>Enhanced media services with additional features.</span>,
         rate: "$500",
         time: "/hour",
         lists: [
@@ -288,7 +288,7 @@ const PriceTabs = () => {
       // Platinum Plan
       {
         title: "Platinum Plan",
-        description: <p>Comprehensive media solutions with premium support.</p>,
+        description: <span>Comprehensive media solutions with premium support.</span>,
         rate: "$750",
         time: "/hour",
         lists: [
@@ -319,7 +319,7 @@ const PriceTabs = () => {
         {tabs.map((tab, index) => (
           <p
             key={index}
-            className={`tab-button py-2 px-2 cursor-pointer   font-thin text-sm text-stone-300 hover:text-tomato ${
+            className={`tab-button py-2 px-2 cursor-pointer   font-medium text-sm text-stone-300 hover:text-tomato ${
               activeTab === index ? "text-tomato" : index === 0? "px-5  md:px-0" : ""
             }`}
             onClick={() => setActiveTab(index)}
@@ -346,22 +346,22 @@ const PriceTabs = () => {
               }`}
             >
               <div className=" flex flex-col gap-y-[10px] mt-[4rem]  w-full  group-hover:opacity-0 translate-y-0  transition-transform duration-700 ease-in-out   group-hover:translate-y-full   group-hover:transition-transform  group-hover:ease-in-out  group-hover:duration-700">
-                <h3 className="text-stone-300  font-thin font-lato text-xl    md:text-3xl ">
+                <h3 className="text-stone-300  font-medium font-lato text-xl    md:text-3xl ">
                   {work.title}
                 </h3>
-                <h6 className="text-stone-500 font-thin font-sans text-base md:text-xl ">
+                <h6 className="text-stone-500 font-medium font-sans text-base md:text-xl ">
                   {work.description}
                 </h6>
-                <h3 className="text-tomato  font-thin font-lato text-xl    md:text-3xl ">
+                <h3 className="text-tomato  font-medium font-lato text-xl    md:text-3xl ">
                   {work.rate}{" "}
-                  <span className="text-stone-500 text-base font-thin font-sans md:text-xl">
+                  <span className="text-stone-500 text-base font-medium font-sans md:text-xl">
                     {" "}
                     {work.time}{" "}
                   </span>
                 </h3>
               </div>
               <div className="requirements-container absolute top-0 left-0 right-0 w-[300px] h-[300px] flex flex-col justify-between items-start  md:w-[300px]  md:h-[400px] lg:w-[260px] opacity-0 translate-x-0 group-hover:transition-transform group-hover:opacity-100 group-hover:translate-x-20 group-hover:bg-zinc-950 group-hover:rounded-md group-hover:shadow-2xl group-hover:duration-700 group-hover:ease-in-out duration-700 ease-in-out group-hover:border-b-8 group-hover:border-b-lime-800">
-                <ul className="w-full list-disc text-stone-500 text-sm font-thin font-lato md:text-base flex flex-col justify-center items-start px-3 md:px-4 gap-y-[5px] flex-1">
+                <ul className="w-full list-disc text-stone-500 text-sm font-medium font-lato md:text-base flex flex-col justify-center items-start px-3 md:px-4 gap-y-[5px] flex-1">
                   {work.lists.map((list, listIndex) => (
                     <li key={listIndex}>{list}</li>
                   ))}

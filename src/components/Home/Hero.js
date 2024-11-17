@@ -82,16 +82,16 @@ export default function Hero() {
 
       <section className="profiler-carousel-container  flex flex-col gap-y-[30px] justify-start items-start   w-full h-[fixed] bg-transparent     md:px-2      md:w-[1200px] ">
         <section className="profiler-carousel-container  p-6  flex flex-col gap-y-[20px] justify-center items-start px-2    w-full h-[fixed] bg-neutral-900 bg-opacity-65  shadow-2xl  rounded-md  md:rounded-xl   md:px-[2rem] md:w-full  lg:h-[500px] ">
-          <h6 className="text-base text-stone-500 font-lato  md:text-xl">
+          <h6 className="text-base text-stone-500 font-lato  font-medium  md:text-xl">
             Hello There!
           </h6>
-          <p className="text-xl  text-stone-300  font-lato    font-thin   md:text-3xl  w-full   lg:w-[90%]">
+          <p className="text-xl  text-stone-300  font-lato    font-medium   md:text-3xl  w-full   lg:w-[90%]">
             I’m Emmanuel Abuo, a Frontend Developer, and Technical Support
             Specialist Building user-centric Interfaces with pixel-perfect
             precision, and Delivering Technical Support Services to Streamline
             Business Operations
           </p>
-          <p className=" flex flex-row gap-x-2 text-stone-500 font-thin font-sans text-base   justify-center items-center  md:text-xl ">
+          <p className=" flex flex-row gap-x-2 text-stone-500 font-medium font-sans text-base   justify-center items-center  md:text-xl ">
             <span className="bg-lime-800 rounded-[50%] w-4 h-4  animate-bounce "></span>{" "}
             Available for Freelancing
           </p>

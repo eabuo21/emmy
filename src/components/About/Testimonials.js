@@ -19,7 +19,7 @@ export default function Testimonials() {
       name: "Blessing Evah",
       position: " Scheduler, CoffeyCrown HCS (Toronto ON)",
       text: (
-        <p>
+        <span>
           {" "}
           Emmanuel played an integral role in simplifying my experience during
           the Zoho CRM onboarding process. As a scheduler, his unwavering
@@ -27,7 +27,7 @@ export default function Testimonials() {
           His dedication significantly expedited my learning curve, ultimately
           making my work more efficient and streamlined. I express my sincere
           appreciation for his invaluable assistance.{" "}
-        </p>
+        </span>
       ),
     },
     {
@@ -36,7 +36,7 @@ export default function Testimonials() {
       name: "Otene Victor S",
       position: " Software Dev, Tongston Group (Abuja Ng)",
       text: (
-        <p>
+        <span>
           {" "}
           As a software developer at Tongston, I have had the privilege of
           collaborating with Emmanuel from April to July 2023. Emmanuel&apos;s
@@ -44,7 +44,7 @@ export default function Testimonials() {
           remarkable technical proficiency have consistently impressed me. His
           dedication to excellence significantly contributed to the success of
           our collaborative endeavors{" "}
-        </p>
+        </span>
       ),
     },
 
@@ -54,13 +54,13 @@ export default function Testimonials() {
       name: "Paul Ekunola",
       position: " Software Dev, GoNomad",
       text: (
-        <p>
+        <span>
           {" "}
           Emma was an absolute delight to collaborate with, and we eagerly
           anticipate future partnerships. His professionalism and commitment
           make him a developer you can rely on to successfully lead a project
           from inception to completion.
-        </p>
+        </span>
       ),
     },
     {
@@ -69,13 +69,13 @@ export default function Testimonials() {
       name: "Charles Nwankwo",
       position: "  Product Designer (UI/UX) , Nobelum (Ontario)",
       text: (
-        <p>
+        <span>
           {" "}
           Emmanuel is a pleasure to work with, consistently going the extra mile
           to ensure projects are completed on time. His collaborative approach
           and commitment to excellence make him a valuable asset to any team.
           Working with Emmanuel has been a positive and productive experience
-        </p>
+        </span>
       ),
     },
     {
@@ -84,7 +84,7 @@ export default function Testimonials() {
       name: "Emmy Ugwuoti",
       position: "   Product Designer (UI/UX) ,  (Abuja Ng)",
       text: (
-        <p>
+        <span>
           {" "}
           Collaborating with Emma has been a truly delightful experience. His
           exceptional skills not only brought my designs to life with
@@ -93,7 +93,7 @@ export default function Testimonials() {
           effective communication significantly contributed to the success of
           our projects. I highly value and appreciate the professionalism and
           expertise he brought to our work together.
-        </p>
+        </span>
       ),
     },
   ];
@@ -110,13 +110,13 @@ export default function Testimonials() {
         height={60}
         className="rounded-full"
       />
-      <article className="text-base text-stone-500 font-thin font-sans md:text-xl">
+      <article className="text-base text-stone-500 font-medium font-sans md:text-xl">
         {item.text}
       </article>
-      <h4 className="text-stone-300 text-xl font-thin font-lato  md:text-2xl ">
+      <h4 className="text-stone-300 text-xl font-medium font-lato  md:text-2xl ">
         {item.name}
       </h4>
-      <h5 className="text-stone-500 text-base font-thin font-lato  md:text-xl ">
+      <h5 className="text-stone-500 text-base font-medium font-lato  md:text-xl ">
         {item.position}
       </h5>
     </div>
@@ -124,10 +124,10 @@ export default function Testimonials() {
 
   return (
     <div className="relative w-full flex flex-col justify-center items-center gap-y-[30px] h-[fixed] bg-neutral-900 bg-opacity-65 shadow-[40px] rounded-md  md:rounded-xl  mx-auto lg:w-[1200px] md:px-4 md:h-[fixed] p-3 md:p-3 mb-9">
-      <h6 className="text-stone-500 font-thin font-lato text-xl md:text-2xl text-center mt-4">
+      <h6 className="text-stone-500 font-medium font-lato text-xl md:text-2xl text-center mt-4">
         Testimonials
       </h6>
-      <p className="text-xl text-stone-300 font-thin font-lato md:text-5xl text-center">
+      <p className="text-xl text-stone-300 font-medium font-lato md:text-5xl text-center">
         What  Colleagues & clients say!
       </p>
 

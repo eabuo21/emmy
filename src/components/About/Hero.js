@@ -26,10 +26,10 @@ export default function Hero() {
       </section>
       <section className="profiler-carousel-container  flex flex-col gap-y-[30px] justify-start items-start px-2 p-2   w-full h-[fixed] bg-transparent       md:w-[1200px] ">
         <section className="profiler-carousel-container  p-6  flex flex-col gap-y-[20px] justify-center items-start px-2    w-full h-[fixed] bg-neutral-900 bg-opacity-65  shadow-2xl  rounded-md  md:rounded-xl   md:px-[2rem] md:w-full  md:h-[fixed] ">
-          <p className="text-xl  text-stone-300  font-lato    font-thin   md:text-3xl   md:w-[90%]">
+          <p className="text-xl  text-stone-300  font-lato    font-medium   md:text-3xl   md:w-[90%]">
             I am Emmanuel Abuo, a Web Developer and Cloud Solutions Specialist
           </p>
-          <p className="text-base  text-stone-500  font-sans    font-thin   md:text-xl   lg:w-[90%]">
+          <p className="text-base  text-stone-500  font-sans    font-medium   md:text-xl   lg:w-[90%]">
             I am a Nigeria-based web developer with a focus on web development,
             cloud solutions, and administration. My expertise also extends to
             technical support and administration, where I have gained a wealth

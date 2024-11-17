@@ -14,10 +14,10 @@ export default function Quality() {
   return (
     <div className=" w-full flex flex-col justify-start items-center gap-y-[30px] h-[fixed] bg-neutral-900 bg-opacity-65 shadow-[40px] rounded-[md md:rounded-xl mx-auto lg:w-[1200px] md:px-4 md:h-[fixed] p-3 md:p-3 mb-9 mt-9">
       <section className="headings-section w-full ">
-        <h6 className="text-stone-500 font-thin font-lato text-base md:text-xl text-center mt-4">
+        <h6 className="text-stone-500 font-medium font-lato text-base md:text-xl text-center mt-4">
           Services
         </h6>
-        <p className="text-xl text-stone-300 font-thin font-lato md:text-5xl text-center">
+        <p className="text-xl text-stone-300 font-medium font-lato md:text-5xl text-center">
           Quality Services
         </p>
       </section>
@@ -34,17 +34,17 @@ export default function Quality() {
           >
             <FontAwesomeIcon
               icon={card.icon}
-              className=" text-gray-400 text-xl font-thin  md:text-4xl"
+              className=" text-gray-400 text-xl font-medium  md:text-4xl"
             />
-            <h3 className="text-stone-300 text-xl  font-thin font-lato   md:text-2xl">
+            <h3 className="text-stone-300 text-xl  font-medium font-lato   md:text-2xl">
               {card.title}
             </h3>
-            <p className="text-stone-500 text-base font-thin font-sans  md:text-base">
+            <p className="text-stone-500 text-base font-medium font-sans  md:text-base">
               {card.text}
             </p>
 
             <div className="  absolute  w-full h-[300px] top-0 left-0 right-0 opacity-0 translate-y-0 transition-all duration-700 ease-in-out group-hover:opacity-100  group-hover:-translate-y-2   group-hover:border-b-8  group-hover:border-b-lime-800      cursor-pointer">
-              {/* some specific contents goes in here  something doubled cards  */}
+              {/* some specific contents goes in here  somemediumg doubled cards  */}
             </div>
           </div>
         ))}

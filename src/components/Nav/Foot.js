@@ -7,7 +7,7 @@ export default function Foot() {
   return (
     <div className="w-full h-[170px]  p-2  md:h-[100px] grid grid-cols-1  justify-center  mx-auto md:mx-0   md:justify-start items-center  gap-x-[100px]    md:grid-cols-2  bg-blend-darken">
       <section className="copy-right-section w-full px-2   flex justify-start items-start  md:px-4">
-        <p className="text-base font-thin font-sans text-stone-300   md:text-base ">
+        <p className="text-base font-medium font-sans text-stone-300   md:text-base ">
           &copy; {currentYear}
           <Link href="/">
             {" "}
@@ -18,7 +18,7 @@ export default function Foot() {
       </section>
 
       <section className="copy-right-section w-full px-2  mb-auto  md:mb-0  flex justify-start items-start   md:px-4  ">
-        <p className="text-base font-thin font-sans text-stone-300   md:text-base   md:ml-auto ">
+        <p className="text-base font-medium font-sans text-stone-300   md:text-base   md:ml-auto ">
           Developed By{" "}
           <Link
             href="https://linkedin.com/in/emmanuel-abuo-b41453206"

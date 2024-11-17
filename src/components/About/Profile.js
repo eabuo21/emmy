@@ -69,7 +69,7 @@ export default function Profile() {
   return (
     <div className="grid grid-cols-1 justify-center items-center w-full h-[fixed]   mx-auto  gap-x-5  gap-y-8   md:grid-cols-2 mb-9  md:px-5  ">
       <section className="profiler-carousel-container  p-6  flex flex-col gap-y-[20px] justify-start  items-start px-2    w-full h-[fixed] bg-neutral-900 bg-opacity-65  shadow-[40px]  rounded-md  md:rounded-xl   mx-auto   md:mx-0   lg:px-[2rem]   md:w-[fixed]  lg:w-[600px]  md:h-[fixed] md:p-3 ">
-        <h2 className="text-xl text-stone-300 font-thin  px-2  mt-3  font-lato   md:text-4xl  md:px-3 ">
+        <h2 className="text-xl text-stone-300 font-bold  px-2  mt-3  font-lato   md:text-4xl  md:px-3 ">
           Experience
         </h2>
         <section className=" flex flex-col  gap-y-5 justify-start items-start    md:px-3 ">
@@ -85,17 +85,17 @@ export default function Profile() {
               <section className="icons-container bg-gray-300 flex flex-col justify-center items-center p-2 rounded-md w-[60px] h-[60px]  shadow-2xl ">
                 <FontAwesomeIcon
                   icon={cards.icon}
-                  className="text-tomato text-xl font-thin "
+                  className="text-tomato text-xl font-medium "
                 />
               </section>
               <section className="contents-container  flex flex-col gap-y-2 justify-center  items-start m-4 ">
                 <h6 className="text-base text-stone-500 font-lato ">
                   {cards.date}
                 </h6>
-                <h5 className="text-xl text-stone-300 font-thin font-lato md:text-xl">
+                <h5 className="text-xl text-stone-300 font-medium font-lato md:text-xl">
                   {cards.company}
                 </h5>
-                <p className="text-stone-500 font-thin text-sm    md:text-base font-sans  ">
+                <p className="text-stone-500 font-medium text-sm    md:text-base font-sans  ">
                   {cards.position}
                 </p>
               </section>
@@ -105,7 +105,7 @@ export default function Profile() {
       </section>
 
       <section className="profiler-carousel-container  p-6  flex flex-col gap-y-[20px] justify-start  items-start px-2    w-full h-[fixed] bg-neutral-900 bg-opacity-65  shadow-[40px]  rounded-md md:rounded-xl   mx-auto  md:mx-0   md:px-[2rem]    md:w-[fixed]  lg:w-[600px]  md:h-[fixed] md:p-3 ">
-        <h2 className="text-xl text-stone-300 font-thin  px-2  mt-3  font-lato   md:text-4xl  md:px-3 ">
+        <h2 className="text-xl text-stone-300 font-bold  px-2  mt-3  font-lato   md:text-4xl  md:px-3 ">
           Education
         </h2>
         <section className=" flex flex-col  gap-y-5 justify-start items-start px-2   md:px-3 ">
@@ -121,17 +121,17 @@ export default function Profile() {
               <section className="icons-container bg-gray-300 flex flex-col justify-center items-center p-2 rounded-md w-[60px] h-[60px]  shadow-2xl ">
                 <FontAwesomeIcon
                   icon={cards.icon}
-                  className="text-tomato text-xl font-thin "
+                  className="text-tomato text-xl font-medium "
                 />
               </section>
               <section className="contents-container  flex flex-col gap-y-2 justify-center  items-start m-4 ">
                 <h6 className="text-base text-stone-500 font-lato ">
                   {cards.date}
                 </h6>
-                <h5 className="text-xl text-stone-300 font-thin font-lato md:text-xl">
+                <h5 className="text-xl text-stone-300 font-medium font-lato md:text-xl">
                   {cards.school}
                 </h5>
-                <p className="text-stone-500 font-thin text-sm font-sans  md:text-base ">
+                <p className="text-stone-500 font-medium text-sm font-sans  md:text-base ">
                   {cards.degree}
                 </p>
               </section>

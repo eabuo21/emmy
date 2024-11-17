@@ -92,7 +92,7 @@ const Nav2 = () => {
                 <Link
                   key={link.name}
                   href={link.to}
-                  className="text-white hover:text-[#ec6952] font-thin  text-base "
+                  className="text-white hover:text-[#ec6952] font-medium  text-base "
                 >
                   {link.name}
                 </Link>
@@ -101,7 +101,7 @@ const Nav2 = () => {
 
             <div className=" hidden   md:flex  justify-start items-start  bg-transparent shadow-2xl  w-[fixed]  border border-[#ec6952] rounded-md p-1 ml-auto ">
               <Link href="mailto: emmaabuo2020@yahoo.com">
-                <section className="button-section  font-thin    w-[100px] rounded-md flex flex-col justify-center items-center p-2 text-base  animate-pulse  text-white  bg-transparent hover:bg-[#ec6952]  ">
+                <section className="button-section  font-medium    w-[100px] rounded-md flex flex-col justify-center items-center p-2 text-base  animate-pulse  text-white  bg-transparent hover:bg-[#ec6952]  ">
                   Hire Me
                 </section>
               </Link>
@@ -137,7 +137,7 @@ const Nav2 = () => {
                   <Link
                     key={link.name}
                     href={link.to}
-                    className="text-white hover:text-stone-300 font-lato font-thin  text-xl "
+                    className="text-white hover:text-stone-300 font-lato font-medium  text-xl "
                     onClick={() => setMenuOpen(false)}
                   >
                     {link.name}
@@ -146,7 +146,7 @@ const Nav2 = () => {
 
                 <div className="    lg:flex  justify-start items-start  bg-transparent shadow-2xl  w-[fixed]  border border-[#ec6952] rounded-md p-1 ml-auto ">
                   <Link href="mailto: emmaabuo2020@yahoo.com" onClick={() => setMenuOpen(false)}>
-                    <section className="button-section  font-thin    w-[100px] rounded-md flex flex-col justify-center items-center p-2 text-base  animate-pulse  text-white  bg-transparent hover:bg-[#ec6952]  ">
+                    <section className="button-section  font-medium    w-[100px] rounded-md flex flex-col justify-center items-center p-2 text-base  animate-pulse  text-white  bg-transparent hover:bg-[#ec6952]  ">
                       Hire Me
                     </section>
                   </Link>

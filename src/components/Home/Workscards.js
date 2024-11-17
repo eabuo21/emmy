@@ -169,7 +169,7 @@ const Tabs = () => {
         {tabs.map((tab, index) => (
           <p
             key={index}
-            className={`tab-button py-2 px-1 cursor-pointer font-thin text-sm text-stone-300 hover:text-tomato ${
+            className={`tab-button py-2 px-1 cursor-pointer font-medium text-sm text-stone-300 hover:text-tomato ${
               activeTab === index ? "text-tomato" : ""
             }`}
             onClick={() => setActiveTab(index)}
@@ -216,7 +216,7 @@ const Tabs = () => {
                   </section>
                 </div>
                 <div className="flex flex-col gap-y-2 justify-start items-start w-full px-2">
-                  <h3 className="text-sm text-stone-500 font-lato font-thin md:text-base">
+                  <h3 className="text-sm text-stone-500 font-lato font-medium md:text-base">
                     {work.title}
                   </h3>
                   <p className="text-stone-300 font-medium text-base font-sans md:text-xl">

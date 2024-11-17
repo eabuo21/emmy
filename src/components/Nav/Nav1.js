@@ -12,12 +12,12 @@ export default function Nav1() {
             icon={faHandPointer}
             className="  text-lime-800 text-3xl animate-bounce hover:animate-pulse  "
           />
-          <h1 className="text-xl text-white font-thin ">Emmanuel </h1>
+          <h1 className="text-xl text-white font-medium ">Emmanuel </h1>
         </section>
       </Link>
       <div className="   flex  justify-start items-start  bg-transparent shadow-2xl   border border-lime-800 rounded-md p-2">
         <Link href="https://linkedin.com/in/emmanuel-abuo-b41453206" target="_blank">
-          <section className="button-section  font-thin    w-[100px] rounded-md flex flex-col justify-center items-center p-1 text-base  animate-pulse  text-white  bg-lime-800">
+          <section className="button-section  font-medium    w-[100px] rounded-md flex flex-col justify-center items-center p-1 text-base  animate-pulse  text-white  bg-lime-800">
             Connect
           </section>
         </Link>

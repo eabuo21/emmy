@@ -26,10 +26,10 @@ export default function Contact() {
   return (
     <div className=" w-full flex flex-col justify-start items-center gap-y-[30px] h-[fixed] bg-neutral-900 bg-opacity-65 shadow-[40px] rounded-md md:rounded-xl  mx-auto lg:w-[1200px] md:px-4 md:h-[fixed] p-3 md:p-6   mb-9 mt-9">
       <section className="headings-section w-full ">
-        <h6 className="text-stone-500 font-thin font-lato text-base md:text-xl text-center mt-4">
+        <h6 className="text-stone-500 font-medium font-lato text-base md:text-xl text-center mt-4">
           Contact
         </h6>
-        <p className="text-xl text-stone-300 font-thin font-lato md:text-5xl text-center">
+        <p className="text-xl text-stone-300 font-medium font-lato md:text-5xl text-center">
           Get in Touch with Me!
         </p>
       </section>
@@ -43,24 +43,24 @@ export default function Contact() {
             >
               <FontAwesomeIcon
                 icon={card.icon}
-                className="text-tomato border-l-8 border-l-lime-800   font-thin text-base  md:text-base "
+                className="text-tomato border-l-8 border-l-lime-800   font-medium text-base  md:text-base "
               />
-              <h4 className="text-stone-300  font-thin font-lato text-xl   md:text-base">
+              <h4 className="text-stone-300  font-medium font-lato text-xl   md:text-base">
                 {card.title}
               </h4>
               <Link href={`tel: ${card.number}`}>
-                <h6 className="text-stone-500 font-thin font-lato text-base   md:text-base">
+                <h6 className="text-stone-500 font-medium font-lato text-base   md:text-base">
                   {card.number}
                 </h6>
               </Link>
 
               <Link href={`mailto: ${card.email}`}>
-                <h6 className="text-stone-500 font-thin font-lato text-base   md:text-base">
+                <h6 className="text-stone-500 font-medium font-lato text-base   md:text-base">
                   {card.email}
                 </h6>
               </Link>
 
-              <h6 className="text-stone-500 font-thin font-lato text-base   md:text-base">
+              <h6 className="text-stone-500 font-medium font-lato text-base   md:text-base">
                 {card.address}
               </h6>
             </div>
